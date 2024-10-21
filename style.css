@@ -1,0 +1,493 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: Nunito, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #FFFFFF;
+    /* White background */
+}
+
+.hero {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #666C70;
+    /* Accent color for text */
+}
+
+.promo {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #666C70;
+    /* Accent color for text */
+}
+
+h1 {
+    font-family: Questrial, sans-serif;
+    font-size: 36px;
+    color: #F05A24;
+    /* Primary color for headings */
+}
+
+h2 {
+    font-family: Codec Pro, sans-serif;
+    font-size: 24px;
+    color: #666C70;
+    /* Accent color for headings */
+}
+
+
+.interactive {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    /* White interactive section */
+}
+
+.interactive h2 {
+    font-family: Nunito, sans-serif;
+    text-align: center;
+    /* Center the text */
+    font-weight: bold;
+    /* Make the text bold */
+}
+
+
+
+.options {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 2px;
+    /* Add 2px margin between rows */
+}
+
+.options li {
+    cursor: pointer;
+    padding: 10px 20px;
+    border: 1px solid #F05A24;
+    border-radius: 10px 10px 0 0;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1px;
+    /* Add 1px margin left and right */
+}
+
+.options li:hover {
+    background-color: #F05A24;
+    /* Primary color on hover */
+    color: #FFFFFF;
+}
+
+.options li.selected {
+    background-color: #F05A24;
+    color: #FFFFFF;
+    ;
+}
+
+
+.card.filtered {
+    opacity: 0.5;
+    /* Reduce opacity for filtered cards */
+}
+
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* Center the cards */
+}
+
+.promo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* Center the cards */
+}
+
+.card {
+    width: 250px;
+    border: 3px solid #F7946D;
+    /* Thicker secondary color border */
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    background-color: #FFFFFF;
+    /* White card background */
+    margin: 15px;
+    /* Add margin to the bottom of each card */
+}
+
+.promocard {
+    width: 250px;
+    border: 3px solid #F7946D;
+    /* Thicker secondary color border */
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    background-color: #FFFFFF;
+    /* White card background */
+    margin: 15px;
+    /* Add margin to the bottom of each card */
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card h2 {
+    font-family: Codec Pro, sans-serif;
+    color: #F05A24;
+    /* Primary color for card headings */
+}
+
+.card-button {
+    background: #F05A24;
+    border: 1px solid #F05A24;
+    /* Thicker secondary color border */
+    border-radius: 15px;
+    color: #FFFFFF;
+    /* Match the link color */
+    cursor: pointer;
+    font-family: Questial, sans-serif;
+    padding: 10px 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+.card p {
+    color: #666C70;
+    /* Accent color for card text */
+}
+
+.card a {
+    color: #F05A24;
+    /* Primary color for links */
+    text-decoration: none;
+}
+
+.card.filtered {
+    opacity: 0.5;
+    /* Reduce opacity for filtered cards */
+}
+
+.divider {
+    border-top: 3px solid #F7946D;
+    margin: 2px 0;
+    width: 60%;
+    margin: 0 auto;
+    /* Center the divider horizontally */
+}
+
+header {
+    background-color: #FFFFFF;
+    /* Use your desired background color */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.logo {
+    max-width: 200px;
+    /* Adjust the width as needed */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #666C70;
+}
+
+.mobile-nav {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .main-nav {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: none;
+        position: absolute;
+        top: calc(15% + 5px);
+        /* Adjust values here to move mobile menu overlay up/down on screen */
+        left: 0;
+        width: 100%;
+        background-color: #f2f2f2;
+        z-index: 999;
+        padding: 20px;
+        line-height: 2;
+    }
+
+    .mobile-nav li a {
+        color: #F05A24;
+        /* Mobile menu link color */
+    }
+
+}
+
+/* Burger Menu Icon */
+.container {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #F05A24;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+/* Hide the burger menu on larger screens */
+@media (min-width: 768px) {
+    .container {
+        display: none;
+    }
+}
+
+
+/* pagination section */
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.pagination button,
+.pagination a {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+}
+
+.pagination .active {
+    background-color: #f0f0f0;
+}
+
+.pagination .page-number.active {
+    background-color: #F05A24;
+    /* Orange color */
+    color: #FFFFFF;
+    /* White color */
+}
+
+
+/* FOOTER section */
+.footer {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+    margin-top: 30px;
+    border-top: 3px solid #F7946D;
+    background-color: #FFFFFF;
+}
+
+/* Logo section */
+.footer-logo {
+    flex: 1;
+    max-width: 400px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-logo p {
+    flex: 1;
+    max-width: 200px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #666C70;
+}
+
+/* Links section */
+.footer-links {
+    flex: 1;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    /* Centers the ul container */
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 200px;
+    text-align: left;
+    /* Aligns text to the left */
+}
+
+.footer-links li {
+    margin-bottom: 15px;
+}
+
+.footer-links a {
+    color: #666C70;
+    text-decoration: none;
+    font-family: Nunito, sans-serif;
+    transition: color 0.3s ease;
+    font-size: 16px;
+    line-height: 1.5;
+    display: inline-block;
+    /* Helps maintain left alignment */
+}
+
+.footer-links a:hover {
+    color: #F05A24;
+}
+
+/* Newsletter section */
+.footer-newsletter {
+    flex: 1;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-newsletter-content {
+    width: 100%;
+    max-width: 400px;
+    text-align: left;
+    padding: 0 20px;
+}
+
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.social-icon {
+    color: #666C70;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.social-icon:hover {
+    color: #F05A24;
+}
+
+/* Sub-footer section */
+.sub-footer {
+    width: 100%;
+    padding: 20px;
+    margin-top: 20px;
+    border-top: 1px solid #F7946D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-family: Nunito, sans-serif;
+    color: #666C70;
+    font-size: 14px;
+}
+
+.sub-footer a {
+    color: #666C70;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.sub-footer a:hover {
+    color: #F05A24;
+
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 30px 15px;
+    }
+
+    .footer-logo,
+    .footer-links,
+    .footer-newsletter {
+        width: 100%;
+        max-width: 100%;
+        margin: 20px 0;
+        padding: 0;
+    }
+
+    .footer-logo {
+        margin-bottom: 30px;
+    }
+
+    .footer-links ul {
+        margin: 0 auto;
+        text-align: center;
+        /* Center align text on mobile */
+    }
+
+    .footer-newsletter-content {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 20px;
+    }
+
+    .sub-footer {
+        flex-direction: column-reverse;
+        gap: 10px;
+        text-align: center;
+    }
+
+}
