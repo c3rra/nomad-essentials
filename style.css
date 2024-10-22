@@ -222,7 +222,7 @@ nav li a {
     display: none;
 }
 
-@media (min-device-width: 1200px) {
+@media (max-width: 768px) {
     .main-nav {
         display: none;
     }
@@ -279,7 +279,7 @@ nav li a {
 }
 
 /* Hide the burger menu on larger screens */
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
     .container {
         display: none;
     }
@@ -446,7 +446,7 @@ nav li a {
 }
 
 /* Responsive styles */
-@media only screen and (max-device-width: 1200px) {
+@media (max-width: 768px) {
     .footer {
         flex-direction: column-reverse;
         text-align: center;
