@@ -279,7 +279,7 @@ nav li a {
 }
 
 /* Hide the burger menu on larger screens */
-@media only screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
     .container {
         display: none;
     }
