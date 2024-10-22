@@ -278,13 +278,13 @@ nav li a {
     transform: translate(0, -11px) rotate(45deg);
 }
 
-/* Hide the burger menu on larger screens */
+/* Hide the burger menu on larger screens 
 @media only screen and (min-width: 1200px) {
     .container {
         display: none;
     }
 }
-
+*/
 
 /* pagination section */
 
