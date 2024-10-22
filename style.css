@@ -245,6 +245,20 @@ nav li a {
         /* Mobile menu link color */
     }
 
+    .card {
+        width: 100%;
+        border: 3px solid #F7946D;
+        /* Thicker secondary color border */
+        border-radius: 15px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        text-align: center;
+        background-color: #FFFFFF;
+        /* White card background */
+        margin: 15px;
+        /* Add margin to the bottom of each card */
+    }
+
 }
 
 /* Burger Menu Icon */
