@@ -11,11 +11,11 @@ body {
     /* White background */
 }
 
-.hero {
+.hero { 
     text-align: center;
     margin-bottom: 30px;
     color: #666C70;
-    /* Accent color for text in hero */
+    /* Accent color for text in hero  test */
 }
 
 .promo {
